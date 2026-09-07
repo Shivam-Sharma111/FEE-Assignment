@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chessboard</title>
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: red;
+            font-family: Arial, sans-serif;
+        }
+
+        .chessboard {
+            display: grid;
+            grid-template-columns: repeat(4, 80px);
+            grid-template-rows: repeat(4, 80px);
+            border: 8px solid #3f2d20;
+            box-shadow: 0 16px 35px rgba(0, 0, 0, 0.22);
+        }
+
+        .square {
+            width: 80px;
+            height: 80px;
+        }
+
+        .light {
+            background: #f0d9b5;
+        }
+
+        .dark {
+            background: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="chessboard" aria-label="4 by 4 chessboard">
+        <div class="square light"></div>
+        <div class="square dark"></div>
+        <div class="square light"></div>
+        <div class="square dark"></div>
+        <div class="square dark"></div>
+        <div class="square light"></div>
+        <div class="square dark"></div>
+        <div class="square light"></div>
+        <div class="square light"></div>
+        <div class="square dark"></div>
+        <div class="square light"></div>
+        <div class="square dark"></div>
+        <div class="square dark"></div>
+        <div class="square light"></div>
+        <div class="square dark"></div>
+        <div class="square light"></div>
+    </div>
+</body>
+</html>
